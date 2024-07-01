@@ -9,48 +9,103 @@
     <link rel="shortcut icon" href="/img/iconoWeb.PNG" type="image/x-icon">
 
     <style>
-        /* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600&display=swap');
-        h1{
-            font-family: 'Karla', sans-serif;
+        * {
             margin: 0;
             padding: 0;
-        }}*/
-        svg {
-            width: 3rem;
-            fill: yellow;
-            margin: 0;
-            padding: 0;
+            box-sizing: border-box;
         }
 
-        img.img-seccion-cuatro {
-            width: 19rem;
+        .container {
+            padding: 60px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
         }
 
-       
+        header {
+            padding-bottom: 40px;
+            position: fixed;
+            width: 100%;
+            background-color: #fcfcf7;
+            
+        }
+
+        header .header-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-top: 40px;
+
+        }
+
+        .header-flex>img {
+            margin-right: auto;
+            margin-left: 120px;
+            width: 10%;
+        }
+
+        nav {
+            margin: auto;
+            text-align: center;
+
+        }
+
+        nav>a {
+            margin-right: 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #1c2e40;
+        }
+
+        nav>a:last-child {
+            background-color:#3589c2;
+            border-radius: 3px;
+            padding:12px 24px;
+            color:#fff
+                
+        }
+        nav>a:hover{
+            color: #4397d4;
+            text-decoration: underline;
+        }
+        nav>a:hover:last-child{
+            color: #fff;
+            text-decoration: none;
+            background-color: #f5b02f;
+        }
+        .texto-header {
+            padding-top:120px;
+        }
     </style>
 </head>
 
 <body>
-    <header class="container">
-        <div class="header-fila">
+    <header>
+        <div class="header-flex">
             <img src="../img/consultus-logo.png" alt="Logo de la empresa">
-            <a href="#">Home</a>
-            <a href="#">Pages</a>
-            <a href="#">Services</a>
-            <a href="#">Case Studies</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <a href="#">800.111.2222</a>
+            <nav class="header-fila">
+                <a href="#">Home</a>
+                <a href="#">Pages</a>
+                <a href="#">Services</a>
+                <a href="#">Case Studies</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">800.111.2222</a>
+            </nav>
         </div>
-        <div class="texto-header container">
-            <h1>We're Here to Help</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti dignissimos impedit perspiciatis
-                magnam, accusantium praesentium modi explicabo esse amet soluta odio, a deserunt iusto!</h2>
-        </div>
-        <a href="#">Find More</a>
     </header>
-    <main class="container">
-        <section class="consulta-financia">
+    <div class="container texto-header">
+        <h1>We're Here to Help</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti dignissimos impedit perspiciatis
+            magnam, accusantium praesentium modi explicabo esse amet soluta odio, a deserunt iusto!</h2>
+    </div>
+    <a href="#">Find More</a>
+
+    <main>
+        <section class="container consulta-financia">
             <div class="consulta-financia-parte-uno">
                 <h4 class="mini-titulo"><span>WELCOME</span></h4>
 
@@ -113,12 +168,12 @@
                 </div>
             </div>
         </section>
-        <section class="seccion-investments">
+        <section class="container seccion-investments">
             <h4 class="mini-titulo"><span>INVESTMENTS</span></h4>
             <h2>Createe the Future You Want</h2>
         </section>
         <section class="seccion-cuatro">
-            
+
             <div class="seccion-cuatro-caraUno">
                 <h4><span>Perspectives</span></h4>
                 <h2>Financial Services Approach</h2>
@@ -146,9 +201,9 @@
             <div class="seccion-cuatro-cara-tres"><img src="../img/img-process.jpg" alt="imagen de personas trabajando"
                     class="img-seccion-cuatro">
             </div>
-            
+
         </section>
-        <aside>
+        <aside class="container">
             <div>
                 <div class="aside-content">
                     <svg aria-hidden="true" class="e-font-icon-svg e-far-handshake" viewBox="0 0 640 512"
@@ -193,103 +248,114 @@
             </div>
         </aside>
 
-        <section>
+        <section class="container">
             <h4><span>WHAT WE OFFER</span></h4>
             <h2>Our Services</h2>
-            Choosing the right financial service for your future impedit per ei, id eros veniam iuvaret his, cibo putent corpora ne mel. Vix no utinam ponderum, pri quem idque facilis.
+            Choosing the right financial service for your future impedit per ei, id eros veniam iuvaret his, cibo putent
+            corpora ne mel. Vix no utinam ponderum, pri quem idque facilis.
 
             <div class="section-offer">
                 <div class="section-offer-photos">
                     <img src="../img/services-1.jpg" alt="">
                     <h3>Financial Advice</h3>
-                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones, debet</p>
+                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones,
+                        debet</p>
                     <button>Find More</button>
                 </div>
                 <div class="section-offer-photos">
                     <img src="../img/services-2.jpg" alt="">
                     <h3>Financial Advice</h3>
-                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones, debet</p>
+                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones,
+                        debet</p>
                     <button>Find More</button>
                 </div>
                 <div class="section-offer-photos">
                     <img src="../img/services-3.jpg" alt="">
                     <h3>Financial Advice</h3>
-                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones, debet</p>
+                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones,
+                        debet</p>
                     <button>Find More</button>
                 </div>
                 <div class="section-offer-photos">
                     <img src="../img/services-4.jpg" alt="">
                     <h3>Financial Advice</h3>
-                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones, debet</p>
+                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones,
+                        debet</p>
                     <button>Find More</button>
                 </div>
                 <div class="section-offer-photos">
                     <img src="../img/services-5.jpg" alt="">
                     <h3>Financial Advice</h3>
-                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones, debet</p>
+                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones,
+                        debet</p>
                     <button>Find More</button>
                 </div>
                 <div class="section-offer-photos">
                     <img src="../img/services-6.jpg" alt="">
                     <h3>Financial Advice</h3>
-                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones, debet</p>
+                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones,
+                        debet</p>
                     <button>Find More</button>
                 </div>
                 <div class="section-offer-photos">
                     <img src="../img/services-7.jpg" alt="">
                     <h3>Financial Advice</h3>
-                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones, debet</p>
+                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones,
+                        debet</p>
                     <button>Find More</button>
                 </div>
                 <div class="section-offer-photos">
                     <img src="../img/services-8.jpg" alt="">
                     <h3>Financial Advice</h3>
-                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones, debet</p>
+                    <p>Omnesque reformidans exmel, cum idque quidam euismod ei. Decore tritani facilisi contentiones,
+                        debet</p>
                     <button>Find More</button>
                 </div>
 
             </div>
 
         </section>
-        <section class="section-solutions">
+        <section class="container section-solutions">
             <h4 class="mini-titulo"><span>SOLUTIONS</span></h4>
             <h3>Case Studies</h3>
-                <p>Choosing the right financial service for your future impedit per ei, id eros veniam iuvaret his, cibo putent corpora ne mel. Vix no utinam ponderum, pri quem idque facilis.</p>
+            <p>Choosing the right financial service for your future impedit per ei, id eros veniam iuvaret his, cibo
+                putent corpora ne mel. Vix no utinam ponderum, pri quem idque facilis.</p>
 
-                <div class="case-studies-images">
-                    <div class="images studies">
-                        <h4>Towake</h4>
-                        <p>Finance</p>
-                    </div>
-                    <div class="images studies">
-                        <h4>Beam Hub</h4>
-                        <p>INVESTMENT/p>
-                    </div>
-                    <div class="images studies">
-                        <h4>Cloud Labs</h4>
-                        <p>Finance</p>
-                    </div>
-                    <div class="images studies">
-                        <h4>Lasern</h4>
-                        <p>Finance</p>
-                    </div>
-                    <div class="images studies">
-                        <h4>Fitapp</h4>
-                        <p>FMARKETING</p>
-                    </div>
-                    <div class="images studies">
-                        <h4>Oliz</h4>
-                        <p>INVESTMENT MARKETING</p>
-                    </div>
+            <div class="case-studies-images">
+                <div class="images studies">
+                    <h4>Towake</h4>
+                    <p>Finance</p>
                 </div>
-                <button>More Cases</button>
+                <div class="images studies">
+                    <h4>Beam Hub</h4>
+                    <p>INVESTMENT/p>
+                </div>
+                <div class="images studies">
+                    <h4>Cloud Labs</h4>
+                    <p>Finance</p>
+                </div>
+                <div class="images studies">
+                    <h4>Lasern</h4>
+                    <p>Finance</p>
+                </div>
+                <div class="images studies">
+                    <h4>Fitapp</h4>
+                    <p>FMARKETING</p>
+                </div>
+                <div class="images studies">
+                    <h4>Oliz</h4>
+                    <p>INVESTMENT MARKETING</p>
+                </div>
+            </div>
+            <button>More Cases</button>
             </h3>
-            
+
         </section>solutions
-        <section class="our-expert">
+        <section class=" container our-expert">
             <h4 class="mini-titulo"><span>THE TEAM</span></h4>
             <h3>Our Experts</h3>
-            <p>Choosing the right financial service for your future impedit per ei, id eros veniam iuvaret his, cibo putent corpora ne mel. Vix no utinam ponderum, pri quem idque facilis.</p>
+            <p>Choosing the right financial service for your future impedit per ei, id eros veniam iuvaret his, cibo
+                putent corpora ne mel. Vix no utinam ponderum, pri quem idque facilis.</p>
             <div class="container-images experts">
                 <div class="images-experts">
                     <img src="../img/team-1.jpg" alt="">
@@ -318,9 +384,89 @@
             </div>
             <button>More About us</button>
         </section>
-       
+
 
     </main>
+    <section class="container contact">
+        <div class="information">
+            <p>Sed tollit commodo diceret eu, te idque facilisi eos, te duo noster blandit. Te ius laboramus
+                signiferumque, id clita aeterno.</p>
+            <span><svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                    </path>
+                </svg> Address
+                40 Park Ave, Brooklyn, New York</span>
+            <span>
+                <svg aria-hidden="true" class="e-font-icon-svg e-fas-mobile-alt" viewBox="0 0 320 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z">
+                    </path>
+                </svg> Phone
+                1-800-111-2222</span>
+
+            <span>
+                <svg aria-hidden="true" class="e-font-icon-svg e-far-envelope" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z">
+                    </path>
+                </svg>
+                Email
+                contact@example.com
+            </span>
+
+        </div>
+
+        <div class="inputs">
+            <h4 class="mini-titulo"><span>GET IN TOUCH</span></h4>
+            <h2 class="contact-input">
+                Contact
+            </h2>
+            <div class="part-inputs">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <a href="" class="button-learn-more"><span class="learn-more">Send Message</span></a>
+            </div>
+        </div>
+    </section>
+    <footer container>
+        <div>
+            <h3>CONSULTUS</h3>
+            <p>We are extremely proud nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit t porro veritus
+                vis, veniam vocibus neglegentur.</p>
+            <p>P: 1-800-111-222</p>
+            <p>E: contact@example.com</p>
+            <p>2023 © Consultus. Designed by MatchThemes</p>
+        </div>
+        <div>
+            <div>
+                <p>Main</p>
+                <p>Home</p>
+                <p>About</p>
+                <p>Services</p>
+                <p>Contact</p>
+            </div>
+            <div>
+                <p>Social</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>LinkedIn</p>
+                <p>Instagram</p>
+            </div>
+            <div>
+                <p>Contact</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>LinkedIn</p>
+                <p>Instagram</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
